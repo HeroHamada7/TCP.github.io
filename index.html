@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Charcoal Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e9ecef;
+      display: flex;
+      justify-content: center;
+      /*align-items: center;*/
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      background: #fff;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* Red header with curved bottom */
+    .header {
+      background: #d62828;
+      position: relative;
+      padding: 70px 20px 100px; /* ⬅ increased top & bottom padding */
+    }
+
+    .header img {
+      width: 120px;
+      height: auto;
+      z-index: 2;
+      position: relative;
+    }
+
+    /* White curve overlay */
+    .header::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px; /* ⬅ slightly deeper curve */
+      background: #fff;
+      border-top-left-radius: 100% 80px;
+      border-top-right-radius: 100% 80px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 20px 0 30px;
+      color: #000;
+    }
+
+    .menu {
+      text-align: left;
+      padding: 0 20px 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      transition: color 0.2s;
+    }
+
+    .menu a:last-child {
+      border-bottom: none;
+    }
+
+    .menu a:hover {
+      color: #d62828;
+    }
+
+    .arrow {
+      font-weight: bold;
+      color: #888;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .title {
+        font-size: 20px;
+      }
+      .menu a {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="D:\college\HP\TCP.png" alt="Logo">
+    </div>
+    <div class="title">The Charcoal Project</div>
+    <div class="menu">
+      <a href="https://www.instagram.com/thecharcoalproject/?hl=en">The Charcoal Project Instagram <span class="arrow">→</span></a>
+      <a href="https://drive.google.com/file/d/1PVOaRZtwbK6EitpUhnAkPXthTm1flP03/view?usp=drive_link">Sussanne Khan Profile <span class="arrow">→</span></a>
+      <a href="https://drive.google.com/file/d/1iYGUrlNJSON95Xdl4jXi5j7RfweEf14e/view?usp=drive_link">The Charcoal Project Furniture Catalog <span class="arrow">→</span></a>
+    </div>
+  </div>
+</body>
+</html>
